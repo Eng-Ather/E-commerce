@@ -1,0 +1,63 @@
+.parent{ width: 90%;  min-height: 80px; padding: 0px 40px 0px 40px;
+         /* border: 2px solid gray;
+         box-shadow: 0px 1px 2px gray; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: larger;
+}
+
+div>i{margin-left: 10px; cursor: pointer;}
+
+.text{ font-size: 250%; color: orangered; font-family:serif;} /*for styling on "ESTY" */
+
+.cat{font-size:small; } /*catagory*/
+
+div>input{ width: 850px;height: 40px; border-radius: 20px; font-size: large; padding-left: 10px;}  /*for search bar in nav*/
+
+div>a{ padding-left: 30px; text-decoration: none; color: black; font-size: 80%; font-family: sans-serif; } /*for differt pages link*/
+
+
+
+.heading{ margin-top: 50px; text-align: center; font-weight: 100;}   /*for main heading*/
+
+
+
+.block{ width: 70%; min-height: 150px; display: flex; flex-wrap:wrap; align-items: center; justify-content: space-around;
+        border: 2px solid white; margin-left: 200px;}                   
+
+ .child{ border:2px solid white; display: flex; flex-direction: column; align-items: center;}
+
+ .child>img{width: 100px; height: 100px; border-radius: 50px;}
+
+ .child>span{ padding: 10px; font-size: 15px;}
+
+ .child:hover{ text-decoration: underline; transform:scale(1.2);} 
+
+
+
+ .long_block{ width: 80%; min-height: 600px; border:2px solid white; 
+              display: flex; flex-wrap: wrap; margin-left: 130px; justify-content: space-between;}
+
+.long_block_child{  display: flex; flex-direction: column; align-items: center; 
+                    width:150px; height:250px;  padding: 10px;  }   
+                    
+.long_block_child:hover{ border:1px solid gray; border-radius: 15px; transform: scale(1);}
+ 
+.long_block_child>img{ width: 150px; height: 250px; border:5px solid white; border-radius: 20px;}
+
+.long_block_child>span{font-family: sans-serif; font-size: 13px;}
+
+
+h1{margin: 20px 10px 10px 50px; font-family: sans-serif;}
+
+
+.block3{ width:90%; height: 300px; border:2px solid white; margin-left: 50px; 
+         display:flex; flex-wrap: wrap; justify-content: space-around;
+}
+
+.block3_child{ width: 230px; height: 260px; border: 1px solid white; border-radius:5px}
+
+.block3_child>img{ width:200px; height: 180px; }
+small{color:green}
