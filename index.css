@@ -1,63 +1,60 @@
-.parent{ width: 90%;  min-height: 80px; padding: 0px 40px 0px 40px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
-        font-size: larger;}
 
-div>i{margin-left: 10px; cursor: pointer;}
+/*------------------------------------------  nav bar ------------------------------------------------------------*/
+.parent
+{       border: 2px solid white; 
+        width: 99%; min-height: 50px;                               /* nav bar main div*/
+        display:  flex;    flex-wrap: wrap; 
+        justify-content: space-around; align-items: center;  
+}
 
-.text{ font-size: 250%; color: orangered; font-family:serif;} /*for styling on "ESTY" */
+div>input{width:800px; height: 40px; border-radius: 25px;}           /* for search bar*/
 
-.cat{font-size:small; } /*catagory*/
+.main_heading{  font-size: 250%; color: orangered; }               /*for main text "Esty"*/
 
-div>input{ width: 850px;height: 40px; border-radius: 20px; font-size: large; padding-left: 10px;}  /*for search bar in nav*/
+div>i>a{ text-decoration: none; color: black; }                    /* to hide the under lin of link */
 
-div>a{ padding-left: 30px; text-decoration: none; color: black; font-size: 80%; font-family: sans-serif; } /*for differt pages link*/
+div>i{margin-left: 10px; cursor: pointer;}                           /* for profile icon ans cart icon*/
 
-
-
-.heading{ margin-top: 50px; text-align: center; font-family:serif; font-size: 35px; font-weight:lighter;}   /*for main heading*/
-
+div>a{ text-decoration: none; color: black; margin-left: 10px; }    /*  to style sign in */
+/*----------------------------------- nv bar end-------------------------------------------------------------------*/
 
 
-.block{ width: 70%; min-height: 150px; display: flex; flex-wrap:wrap; align-items: center; justify-content: space-around;
+.nav_bar_links{ text-align: center;  font-size: large; } 
+
+
+/*-------------------------- for nav bar media quries ------------------------*/
+@media (max-width: 1200px){.parent{ display:flex; flex-direction: column;} }
+
+@media (max-width: 900px){ div>input{width:400px;} } 
+
+@media (max-width: 485px){ div>input{width:200px;} } 
+
+
+
+/*------------------- main heading Find things you'll love. --------------------------------------------*/
+.heading{ margin-top: 50px; text-align: center; font-family:serif; font-size: 180%; font-weight:lighter;}   
+
+
+/*-------------------------------- circular shap images  (block 1) ------------------------------------*/
+.block{ width: 70%; min-height: 150px; display: flex; flex-wrap:wrap; 
         border: 2px solid white; margin-left: 200px;}                   
 
- .child{ border:2px solid white; display: flex; flex-direction: column; align-items: center;}
+        .child{ border:2px solid white; margin-top: 20px; width: 16%;
+                display: flex; flex-direction: column; align-items: center;  }
+        .child:hover{ text-decoration: underline; } 
 
- .child>img{width: 100px; height: 100px; border-radius: 50px;}
- .child>img:hover{ transform:scale(1.2); transition: 0.5s;box-shadow: 1px 1px 1px 1px gray; }
+        .child>img{width: 80px; height: 80px; border-radius: 40px;}
+        .child>img:hover{ transform:scale(1.2);   transition: 0.5s;   box-shadow: 1px 1px 1px 1px gray; }
 
- .child>span{ padding: 10px; font-family: sans-serif; font-size: 15px;}
+        .child>span{ padding: 10px; font-family: sans-serif; font-size: 14px; font-weight: bolder; text-align: center; }
 
- .child:hover{ text-decoration: underline; } 
-
-
-
-
-/* 
- .long_block{ width: 80%; min-height: 600px; border:2px solid white; 
-              display: flex; flex-wrap: wrap; margin-left: 130px; justify-content: space-between; padding: 30px;}
-
-.long_block_child{  display: flex; flex-direction: column; align-items: center; 
-                    width:13%; height:250px;  padding: 10px;  }   
-                    
-.long_block_child:hover{ border:1px solid gray; border-radius: 12px; box-shadow: 0px 2px 5px gray;  transform:scale(1.01);}
  
-.long_block_child>img{ width: 95%; height: 250px; border:5px solid white; border-radius: 20px;}
 
-.long_block_child>span{font-family: sans-serif; font-size: 13px;} */
-
-
-
-
-
-
+/*-------------------------long box  (block 2) ------------------------------------------------------*/
 .long_block{ width: 72%; min-height: 600px; border:2px solid white; padding: 30px;
-        display: flex; flex-wrap: wrap; margin-left: 130px; justify-content: space-between; } 
+             display: flex; flex-wrap: wrap; margin-left: 130px; justify-content:space-between; } 
     
-    .long_block_child{ width: 16%; height: 250px; border:2px solid white; margin-top: 20px;
+    .long_block_child{ width: 16%; min-height: 250px; border:2px solid white; margin-top: 20px;
                         display: flex; flex-direction: column; align-items: center;}
     
     .long_block_child:hover{box-shadow: 1px 1px 5px  gray; border: 2px solid gray;
@@ -72,31 +69,54 @@ div>a{ padding-left: 30px; text-decoration: none; color: black; font-size: 80%; 
 
 h1{margin: 20px 10px 10px 50px; font-family: sans-serif;}
 
-.block3{ width:90%; height: 300px; border:2px solid white; margin-left: 50px; 
+
+/*-----------------------------------  for block 3  -------------------------------------*/
+.block3{ width:90%; min-height: 300px; border:2px solid white; margin-left: 50px; 
          display:flex; flex-wrap: wrap; justify-content: space-between;}
 
-.block3_child{ border:2px solid white; display: flex; flex-direction: column; align-items: center; 
-               width: 18%; padding: 2px; }
+        .block3_child{ border:2px solid white; display: flex; flex-direction: column; align-items: center; 
+                       width: 18%; padding: 2px; }
 
- .block3_child:hover{box-shadow: 1px 1px 5px  gray; border: 2px solid gray;
-                    border-radius: 12px;transform: scale(1.1); transition: 0.5s;}  
+        .block3_child:hover{box-shadow: 1px 1px 5px  gray; border: 2px solid gray;
+                            border-radius: 12px;transform: scale(1.1); transition: 0.5s;}  
 
-.block3_child>img{ width:100%; height: 180px; border-radius:10px }
+        .block3_child>img{ width:100%; height: 180px; border-radius:10px }
 
-small{color:green}
+        small{color:green}
 
 
-
-.block4{ width:90%; height: 300px; border:2px solid white; margin-left: 50px; 
+/*--------------------- Shop our popular gift categories  (block 4) -----------------------*/
+.block4{ width:90%; min-height: 300px; border:2px solid white; margin-left: 50px; 
         display:flex; flex-wrap: wrap; justify-content: space-around;}
 
-.block4_child{ width:18%; height: 260px; border: 1px solid gray; border-radius:10px; }
+        .block4_child{ width:18%; height: 260px; border: 1px solid gray; border-radius:10px; }
 
-/* .block4_child:hover{ border: 2px solid gray; border-radius:10px; box-shadow: 0px 2px 5px gray;transform:scale(0.999);} */
+        .block4_child:hover{box-shadow: 1px 1px 5px  gray; border: 1px solid gray;
+                            border-radius: 12px;transform: scale(1.1); transition: 0.5s;}  
 
-.block4_child:hover{box-shadow: 1px 1px 5px  gray; border: 1px solid gray;
-        border-radius: 12px;transform: scale(1.1); transition: 0.5s;}  
+        .block4_child>img{ width:100%; height: 180px; border-radius:10px 10px 0px 0px; }
 
-.block4_child>img{ width:100%; height: 180px; border-radius:10px 10px 0px 0px; }
+        .block4_child>span{ display:flex;align-items: center; justify-content: center; 
+                             padding-top: 20px; font-family: sans-serif; font-size: 22px; }
 
-.block4_child>span{ display:flex; justify-content: center; padding-top: 20px; font-family: sans-serif; font-size: 22px; }
+
+
+/*media queres when screen size is less than 1200*/
+
+@media (max-width: 1200px)
+{
+        .block{ display: flex; flex-direction: column; margin-left: 50px; }
+        .child{display: flex; flex-direction: row; white-space: nowrap; align-items:center; }
+
+
+        .long_block{ display:flex; flex-direction: column; margin-left: 50px; }
+        .long_block_child{display: flex; flex-direction: row; white-space: nowrap;}
+        
+        .block3{ display:flex; flex-direction: column;  margin-left: 50px;  }
+        .block3_child{ display: flex; flex-direction: row; white-space: nowrap;  }
+
+        .block4{ display:flex; flex-direction: column; margin-left: 50px;  }
+        .block4_child{ display: flex; flex-direction: row; white-space: nowrap; margin-top: 15px;  }
+        .block4_child>img{ width:100%; height: 260px;  border-radius:10px 10px 10px 10px;} 
+
+}
