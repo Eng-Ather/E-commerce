@@ -1,3 +1,19 @@
+/*Watsapp Button*/
+
+.watsapp_button
+{
+        position: fixed;
+        width: 60px; height: 60px;
+        border: 2px solid green; 
+        color: white;  background-color: rgb(57, 102, 57);
+        font-size: 50px;
+        top: 0 ;  right: 0;
+        margin-top: 400px;
+}
+
+.watsapp_button:hover{ transform: scale(1.4); transition: 0.5s; border-radius: 20px;  width: 100px }
+
+
 
 /*------------------------------------------  nav bar ------------------------------------------------------------*/
 .parent
